@@ -1,0 +1,284 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #fdfdfd;
+    font-size: 1em;
+    font-family: 'Lato', Helvetica, sans-serif;
+    color: #444;
+}
+
+body::after {
+    content: "";
+    background: url('/images/backgrounds.jpg');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;    
+    height: 1200px;
+    opacity: 0.9;
+    z-index: -1; 
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+main {
+    padding: 0;
+    margin: 6em auto;
+}
+
+h1 {
+    margin: 0;
+    padding: 2em 0 4em 0;
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 1.5em;
+    font-weight: 900;
+    color: #000;
+    opacity: .9;
+}
+
+    h1 > strong {
+        font-size: 2.3em;
+        font-weight: 900;
+    }
+
+h2 {
+    margin-top: 1em;
+    padding-bottom: .3em;            
+    border-bottom: 0px solid #adefc6;
+    font-size: 2em;
+    font-weight: 700;
+    color: #ffa447;
+}
+
+h3, h4 {
+    margin: 0;
+    color: #000;
+}
+
+p {
+    font-size: 0.9em;
+    line-height: 1.8em;
+}
+
+a {
+    color: #ffa447;
+    text-decoration: none;
+}
+
+.larger {
+    font-size: 1.2em;
+    color: #000;
+}
+
+table {
+    font-size: .95em;
+}
+
+tr:nth-child(odd)  { background-color:#f6fbf1; }
+tr:nth-child(even) { background-color:#fff; }
+
+th, td > strong {
+    color: #333;
+}
+
+th, td {
+    margin: 0;
+    padding: .2em 1em;
+}
+
+th {
+    line-height: 2em;
+}
+
+td > p {
+    margin: .4em 0 .2em 0;
+    padding: 0;
+    line-height: 1.5em;
+}
+
+ul {
+    margin: .5em 0;
+}
+
+li {
+    margin: 0;
+    padding: .3em 0;
+    font-size: .9em;
+}
+
+.nomargin {
+    margin: 0 !important;
+}
+
+.btn {
+    display: inline-block;
+    margin: 1em 0;
+    padding: .3em .5em;
+    border: 1px solid #e1e1e1;
+    background: #fafafa;
+    font-weight: 600;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.polaroid {
+    position: relative;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    text-align: center;
+}
+    
+.polaroid img {
+    border: 10px solid #fff;
+    border-bottom: 45px solid #fff;
+    -webkit-box-shadow: 3px 3px 3px #777;
+    -moz-box-shadow: 3px 3px 3px #777;
+    box-shadow: 3px 3px 3px #777;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+}
+    
+.polaroid p {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 3px;
+    font: 400 15px/1 'serif', cursive;
+    color: #888;
+}
+
+#heart {
+    color: #900;
+    font-weight: 900;
+}
+
+#pic1 {
+    width: 80%;
+}
+
+#pic2,
+#pic3 {
+    width: 50%;
+}
+
+#polaroid1 {
+    -webkit-transform: rotate(-4deg);  
+    -moz-transform: rotate(-4deg); 
+    transform: rotate(-4deg);
+}
+
+#polaroid2 {
+    -webkit-transform: rotate(7deg);  
+    -moz-transform: rotate(7deg); 
+    transform: rotate(7deg);            
+}
+
+#polaroid3 {
+    -webkit-transform: rotate(-5deg);  
+    -moz-transform: rotate(-5deg); 
+    transform: rotate(-5deg);            
+}
+
+#polaroid4 {
+    width: 100%;
+    -webkit-transform: rotate(5deg);  
+    -moz-transform: rotate(5deg); 
+    transform: rotate(5deg);            
+}
+
+#seeyou {
+    text-align: center;
+    margin: 2em 20px;
+    font-size: 3em;
+}
+
+#discount {
+    display: inline-block;
+    margin-top: 1em;
+    max-width: 360px;
+    font-style: italic;
+}
+
+#discount-code {
+    font-weight: 600;
+    color: #8bcda4;
+}
+
+#langs {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+#langs img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+#countdown {
+    text-align: center;
+    color: #ccc;
+    font-size: 1.7em;
+    margin-bottom: 4em;
+}
+
+#days, #hours, #minutes, #seconds {
+    display: inline-block;
+    margin-right: .6em;
+    margin-left: .2em;
+    color: #aaa;
+}
+
+@media only screen and (min-width: 60em) { /* 960px */
+    h1 {
+        font-size: 2em;
+    }
+
+    h1 strong {
+        font-size: 3em;
+    }
+
+    h2 {
+        margin-top: 2em;
+    }
+
+    #pic1 {
+        width: 500px;
+    }
+
+    #pic2 {
+        width: 250px;
+    }
+
+    #pic3 {
+        width: 250px;
+    }
+
+    #polaroid1 {
+        width: 300px;
+    }
+
+    #polaroid2 {
+        width: 220px;
+        left: -80px;
+        -webkit-transform: rotate(15deg);  
+        -moz-transform: rotate(15deg); 
+        transform: rotate(15deg);            
+    }
+
+    #polaroid3 {
+        width: 220px;
+        -webkit-transform: rotate(5deg);  
+        -moz-transform: rotate(5deg); 
+        transform: rotate(5deg);            
+    }
+}
