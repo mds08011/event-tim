@@ -1,43 +1,104 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="description" content="Event Website Template"/>
-    <meta name="author" content="Malcolm"/>
+    <meta charset="UTF-8">
+    <!-- This attribute declares the document’s character encoding. Leaving it off might cause specific characters to display incorrectly in some browsers. It must come before the <title> element to avoid faulty characters in the page title.-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event
-    </title>
-
-    <link href="css/simple-grid.css" rel="stylesheet"/>
-    <link href="css/custom.css?v=2" rel="stylesheet"/>
-
+    <html lang="en" class="no-js">
+    <!-- The lang attribute applied to the html element, defines the natural language of the page. It contains a single “language tag” in the format defined in Tags for Identifying Languages (BCP47), for example en for English, de for German or ru for Russian.  Apply styling to specific components in browsers that don’t support JavaScript. This class will be removed in browsers that support and execute modern JavaScript. -->
     <script src="js/main.js" type="text/javascript" defer></script>
+
+<!--     <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css">
+ -->   <link href="css/simple-grid.css" rel="stylesheet"/>
+    <link href="css/custom.css?v=2" rel="stylesheet"/>
+    <!-- <CSS for the site.>
+    <!-- <link rel="stylesheet" href="/assets/css/print.css" media="print"> -->
+    <!-- <Print CSS for the site.> -->
+    <!-- <link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Title">-->
+    <!--<RSS Feed for your site.> -->
+<script defer data-domain="tims60th.com" src="https://plausible.io/js/plausible.js"></script>
+
+
+    <script type="module">
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- <meta name="description" content="Page description"> -->
+    <!-- <The unique description of the page, for example, displayed on search result pages. It can be any length, but search engines truncate snippets to ~155–160 characters.> -->
+    <!-- <meta property="og:title" content="Unique page title - My Site"> -->
+    <!-- <The unique title of the page. Used by URL scrapers on social media platforms like Twitter or Facebook.> -->
+    <!-- <meta property="og:description" content="Page description"> -->
+    <!-- <The unique description of the page. Used by URL scrapers on social media platforms like Twitter or Facebook.> -->
+
+    <!-- <meta property="og:image" content="https://commons.wikimedia.org/wiki/File:Felis_catus-cat_on_snow.jpg"> -->
+    <!-- <The image displayed when you share the link to a page on social media, chat applications, or other sites that scrape URLs.> -->
+    <!-- <Ideally, it should be a square image with the important content placed in the middle of the square in a rectangle with a 2:1 ratio. This will make sure that the image will look good in cards with rectangle and square shaped images.> -->
+    <!-- <Rules for Twitter: Images for this Card support an aspect ratio of 2:1 with minimum dimensions of 300x157 or maximum of 4096x4096 pixels. Images must be less than 5MB in size. JPG, PNG, WEBP and GIF formats are supported.> -->
+
+    <!-- <meta property="og:type" content="website"> -->
+    <!-- <The type of content you’re sharing, e.g. website, article, or video.movie. A required property for valid Open Graph pages.> -->
+    <!-- <meta property="og:image:alt" content="Image description"> -->
+    <!-- <A description of the image. Don’t use this meta tag if the image is purely decorative and doesn’t provide any meaningful information. Screen readers ignore the image, if we don’t provide alt text.> -->
+    <!-- <meta name="twitter:card" content="summary"> -->
+    <!-- <his meta tag defines how cards will look when shared on Twitter. There are two options for websites, summary and summary_large_image.> -->
+    <!-- <meta name="twitter:dnt" content="on"> -->
+    <!-- Disallow Twitter from using your site’s info for personalization purposes.-->
+    <!-- <meta property="og:url" content="https://malcolmdsmith.com"> -->
+    <!-- <The canonical URL of the page. A required property for valid Open Graph pages.> -->
+    <!-- <link rel="canonical" href="https://malcolmdsmith.com"> -->
+    <!-- <Use the canonical link element to prevent SEO issues caused by duplicate content by specifying the original source for pages that are available on multiple URLs.> -->
+    <!-- <meta name="author" content="Malcolm Smith">  -->
+    <!-- <> -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+    <link rel="manifest" href="../../site.webmanifest">
+    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Control the behavior of search engine crawling and indexing -->
+    <meta name="robots" content="index,follow"><!-- All Search Engines, else "noindex, nofollow"-->
+    <meta name="googlebot" content="index,follow"><!-- Google Specific, else "noindex, nofollow" -->
+    <meta name="google" content="nositelinkssearchbox"><!-- Tells Google not to show the sitelinks search box -->
+
+    <!-- Geo tags -->
+    <meta name="ICBM" content="32.7152752,-117.1572166">
+    <meta name="geo.position" content="32.7152752,-117.1572166"><!-- Downtown San Diego -->
+    <meta name="geo.region" content="US-CA">
+    <!-- Country code (ISO 3166-1): mandatory, state code (ISO 3166-2): optional; eg. content="US" / content="US-NY" -->
+    <meta name="geo.placename" content="San Diego, CA"><!-- eg. content="New York City" -->
+
+    <title>Tim's 60th</title>
+
 </head>
 
 <body>
     <main class="container">
         <h1>
-            <strong>Event</strong><br />
-            August 6, 2021
+            <strong>Tim's Blacklist</strong><br />
+            August 24, 2022
         </h1>
 
         <div class="row">
             <div class="col-6">
                 <div id="polaroid1" class="polaroid rotate-left">
                     <p>Caption</p>
-                    <img id="pic1" src="images/1.png" alt="1" />
+                    <img id="pic1" src="src/1.png" alt="1" />
                 </div>
             </div>
             <div class="col-2">
                 <div id="polaroid2" class="polaroid rotate-left-ext">
                     <p>Caption</p>
-                    <img id="pic2" src="images/2.png" alt="2" />
+                    <img id="pic2" src="src/2.png" alt="2" />
                 </div>
             </div>
             <div class="col-3">
                 <div id="polaroid3" class="polaroid rotate-right-ext">
                     <p>Caption</p>
-                    <img id="pic3" src="images/3.png" alt="3" />
+                    <img id="pic3" src="src/3.png" alt="3" />
                 </div>
             </div>
         </div>
@@ -46,112 +107,83 @@
             <div class="col-6">
                 <h2>Venue</h2>
                 <p>
-                    <strong class="larger">Conference Center</strong><br />
-                    123 Main Street<br />
+                    <strong class="larger">Petco Park</strong><br />
+                    100 Park Blvd.<br/>
                     San Diego CA 92101<br />
-                    +1 123 456 7890<br />
-                    <a href="mailto:email@example.com">email@example.com</a>
+                    +1 619 795 5025<br/>
+                    <!-- <a href="mailto:email@example.com">email@example.com</a> -->
                 </p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2479.8570906619593!2d-0.754352684381368!3d51.57085331388302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487689defb36f5d5%3A0xb349b1bb49a776bb!2sCrowne+Plaza+Marlow!5e0!3m2!1sen!2suk!4v1483660407324" width="100%" height="255px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2517.0613588435745!2d-117.1571903383599!3d32.70667760222354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1636842343931!5m2!1sen!2sus" width="100%" height="255px" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
             <div class="col-6">
                 <h2>Schedule</h2>
                 <table>
                     <tr>
-                        <th>10:00</th>
+                        <th>02:30PM</th>
                         <td>
-                            <strong>Agenda Item 1</strong>
-                            <p>Details/description related to the adjenda item</p>
+                            <strong>Drive to Solana Beach Train Station</strong>
+                            <p>Cars shuttle partiers from Condesa Drive, Del Mar to the Solana Beach Train Station</p>
                         </td>
                     </tr>
                     <tr>
-                        <th>11:00</th>
+                        <th>03:01PM</th>
                         <td>
-                            <strong>Agenda Item 2</strong>
-                            <p>Details/description related to the adjenda item</p>
+                            <strong>Train (Coaster Train 636) Departs for Petco Park</strong>
+                            <p>Train from Solana Beach to Petco Park</p>
+                        </td>
+                                            </tr>
+
+                        <th>03:37PM</th>
+                        <td>
+                            <strong>Train Arrives at Santa Fe Depot Station</strong>
+                            <p>San Diego Padres vs Cleveland Guardians</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>04:30PM</th>
+                        <td>
+                            <strong>Arrive at Box Seats</strong>
+                            <p>San Diego Padres vs Cleveland Guardians</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>05:40PM</th>
+                        <td>
+                            <strong>Padres Game</strong>
+                            <p>San Diego Padres vs Cleveland Guardians.  At this time, official game times are not released but 5:40-8:40PM is predicted.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>09:40PM</th>
+                        <td>
+                            <strong>Train Departs</strong>
+                            <p>North County Transit District (NCTD) runs a "Padres Coaster" Train after home games.  Train departs 60 minutes (1 hour) after the end of game.  The train has an absolute departure of midnight.  Train ride to Solana beach is ~40 minutes long.</p>
+                        </td>
+                        </tr>
+                        <th>10:20PM</th>
+                        <td>
+                            <strong>Train arrives at Solana Beach</strong>
+                            <p>Train from Solana Beach to Petco Park</p>
                         </td>
                     </tr>
                     <tr>
                         <th>13:00</th>
                         <td>
-                            <strong>Agenda Item 3</strong>
-                            <p>Details/description related to the adjenda item</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>13:30</th>
-                        <td>
-                            <strong>Agenda Item 4</strong>
-                            <p>Details/description related to the adjenda item</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>15:30</th>
-                        <td>
-                            <strong>Agenda Item 5</strong>
-                            <p>Details/description related to the adjenda item</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>18:00</th>
-                        <td>
-                            <strong>Agenda Item 6</strong>
-                            <p>Details/description related to the adjenda item</p>
-                        </td>
-                    </tr>
+                            <strong>Cars Back to Condesa</strong>
+                            <p>San Diego Padres vs Cleveland Guardians</p>
                 </table>
             </div>
         </div>
 
         <div class="row">
             <div class="col-6">
-                <h2>Wedding Party</h2>
-                <div class="row">
-                    <div class="col-6 nomargin">
-                        <h4>Group 1</h4>
-                        <p>Person 1</p>
-
-                        <h4>Group 2</h4>
-                        <ul>
-                            <li>Person 2</li>
-                            <li>Person 3</li>
-                            <li>Person 4</li>
-                            <li>Person 5</li>
-                            <li>Person 6</li>
-                        </ul>
-                    </div>
-                    <div class="col-6">
-                        <h4>Group 3</h4>
-                        <ul>
-                            <li>Person 7</li>
-                            <li>Person 8</li>
-                            <li>Person 9</li>
-                            <li>Person 10</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6">
-                <h2>Dress Code</h2>
-                <table>
-                    <tr>
-                        <th>Civil ceremony</th>
-                        <td>Formal attire</td>
-                    </tr>
-                    <tr>
-                        <th>Reception</th>
-                        <td>Black tie optional</td>
-                    </tr>
-                </table>
-
-                <h2>Gifts</h2>
-                <p>Registry is here: <br /><a href="mailto:email@example.com">email@example.com</a></p>
-            </div>            
+                <h2>Foul Pole Suite</h2>
+                        <p>Located in the Historic Western Metal Supply Co. the Foul Pole Suite is one the most unique offerings in the ballpark. It combines a one of a kind ambiance with the exclusivity and luxury of a traditional suite. It is located directly next to the Western Metal Loft, a full-service bar with food, drinks and games.</p>         
         </div>     
         
         <div class="row">
             <div class="col-6">
-                <h2>Accomodation</h2>
+                <h2>Accommodation</h2>
 
                 <h3>Hotel 1</h3>
                 <p>
@@ -180,17 +212,10 @@
                     <br />
                 </p>
 
-                <h3>Hotel 3</h3>
+                <h3>Condesa Drive</h3>
                 <p>
-                    123 Main Street<br />
-                    San Diego CA 92101<br />
-                    <br />Free parking, Free WiFi, Breakfast included, etc
-                    <br />Double room: ~ $100
-                    <br />Single room: ~ $100
-                    <br /><b>Telephone:</b> +1 123 456 7890
-                    <br /><b>Email:</b> <a href="mailto:email@example.com">email@example.com</a>
-                    <br /><b>Website:</b> <a href="https://example.com">https://example.com</a>
-                    <br />
+                    FAQ: I'm special, Can I stay at Condesa Drive?<br/>
+                    A: Contact Rachael Clark.<p/>
                 </p>
 
             </div>
@@ -199,7 +224,7 @@
                 
                 <h3>Airport</h3>
                 <p>
-                    Nearest airport is San Diego Internation Airport [SAN] (~20 miles)
+                    Nearest airport is San Diego International Airport [SAN] (~20 miles)
                 </p>
 
                 <h3>Public Transportation</h3>                
@@ -210,12 +235,9 @@
                     When arriving in High Wycombe with the train there is a small interchange (5min, 3 stops) to get from the train station to the bus stops.
                 </p>
 
-                <h3>Private Car</h3>
+                <h3>Coaster</h3>
                 <p>
-                    <strong>Yellow Taxi</strong><br />
-                    +1 123 456 7890<br />
-                    <a href="https://example.com">https://example.com</a><br />                  
-                </p>
+                    Train
                 <h3>Parking</h3>
                 <p>
                     There is on-site parking at the hotel.

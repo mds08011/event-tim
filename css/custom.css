@@ -9,8 +9,8 @@ body {
 
 body::after {
     content: "";
-    background: url('/images/backgrounds.jpg');
-    background-repeat: no-repeat;
+    background: url('/images/backgrounds.jpg');/*    Add background image?
+*/    background-repeat: no-repeat;
     position: absolute;
     top: 0;
     right: 0;
@@ -52,8 +52,11 @@ h2 {
     border-bottom: 0px solid #adefc6;
     font-size: 2em;
     font-weight: 700;
-    color: #ffa447;
-}
+    color: #FFC425;
+/*    San Diego Padres Brown #2F241D;
+San Diego Padres Gold
+Hex Color: #FFC425;
+}*/
 
 h3, h4 {
     margin: 0;
@@ -161,7 +164,7 @@ li {
 }
 
 #pic1 {
-    width: 80%;
+    width: 50%;
 }
 
 #pic2,
