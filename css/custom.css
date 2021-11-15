@@ -9,8 +9,8 @@ body {
 
 body::after {
     content: "";
-    background: url('/images/backgrounds.jpg');/*    Add background image?
-*/    background-repeat: no-repeat;
+    background: url('/src/4.png');/*    Add background image?*/    
+    background-repeat: no-repeat;
     position: absolute;
     top: 0;
     right: 0;
@@ -82,7 +82,7 @@ table {
     font-size: .95em;
 }
 
-tr:nth-child(odd)  { background-color:#f6fbf1; }
+tr:nth-child(odd)  { background-color:#ffe9ae; }
 tr:nth-child(even) { background-color:#fff; }
 
 th, td > strong {
