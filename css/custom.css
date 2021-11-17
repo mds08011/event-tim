@@ -9,7 +9,7 @@ body {
 
 body::after {
     content: "";
-    background: url('/src/4.png');/*    Add background image?*/    
+    /* background: url('/src/4.png');   Add background image?     */
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
